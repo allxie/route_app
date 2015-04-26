@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Plane</title>
+</head>
+<body>
+	<h1> Make a New Plane </h1>
+	<form action="/planes" method="POST">
+		<input type="text" name="plane[name]" placeholder="name">
+		<input type="text" name="plane[kind]" placeholder="kind">
+		<textarea name="plane[description]" placeholder="description"> </textarea>
+
+		<button type="submit">Save</button>
+	</form>
+</body>
+</html> -->
+
+<%= form_for :planes do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :kind %><br>
+    <%= f.text_field :kind %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

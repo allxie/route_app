@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plane: MyString
+  name: MyString
+  kind: MyString
+  description: MyString
+
+two:
+  plane: MyString
+  name: MyString
+  kind: MyString
+  description: MyString
